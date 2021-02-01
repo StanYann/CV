@@ -30,7 +30,7 @@
 	padding: 1em;
 	text-align: left;
 }
-.btn {
+.btnCV {
 	color: #fff;
 	cursor: pointer;
 	font-size: 16px;
@@ -44,7 +44,7 @@
     width: 100%;
     border-radius: 120px;
 }
-.btn:hover {
+.btnCV:hover {
 	text-decoration: none;
 }
 .btn-4 {
