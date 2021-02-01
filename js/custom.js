@@ -108,7 +108,16 @@ $(document).ready(function () {
     $("#demo02").studybanana_animatedModal();
 
     // Contact Form 	
+    var typed = $(".typed");
 
+    $(function() {
+      typed.typed({
+        strings: ["Alex Smith.", "Designer.", "Developer.", "Freelancer.", "Photographer"],
+        typeSpeed: 100,
+        loop: true,
+      });
+    });
+    
     // validate contact form
     $(function () {
         $('#contact-form').validate({
