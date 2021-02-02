@@ -64,10 +64,10 @@
 	position: absolute;
 	top: -50px;
 	left: -75px;
-	-webkit-transform: rotate(35deg);
-	transform: rotate(35deg);
-	-webkit-transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
-	transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+	-webkit-transform: rotate(35deg) !important;
+	transform: rotate(35deg) !important;
+	-webkit-transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1) !important;
+	transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1) !important;
 	z-index: -10;
 }
 .btn-4:hover:after {
@@ -674,7 +674,7 @@ a.active {
 
 #contact {
     padding: 100px 0;
-    background: #ffffff
+    background: #f3f3f3
 }
 
 #contact-form input,
