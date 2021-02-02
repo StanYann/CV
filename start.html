@@ -1,427 +1,156 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <!-- meta -->
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-
-  <title>我的简历</title>
-  <meta content="" name="keywords">
-  <meta content="" name="description">
-
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,500,500i,600,600i,700,700i|Playfair+Display:400,400i,700,700i,900,900i" rel="stylesheet">
-
-  <!-- Bootstrap CSS File -->
-  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
-  <!-- Libraries CSS Files -->
-  <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
-  <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
-  <link href="lib/magnific-popup/magnific-popup.css" rel="stylesheet">
-  <link href="lib/hover/hover.min.css" rel="stylesheet">
-
-  <!-- Main Stylesheet File -->
-  <link href="css/style.css" rel="stylesheet">
-  <link href="css/style2.css" rel="stylesheet">
-
-  <!-- Responsive css -->
-  <link href="css/responsive.css" rel="stylesheet">
-
-  <!-- Favicon -->
-  <link rel="shortcut icon" href="img/logo.png">
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🇬🇧🇨🇳Language selection</title>
+    <link rel="icon" href="img/logo.png" type="image/x-icon">
 </head>
-
 <body>
+    <style>
+  *{
+    width: 100%;
+    height: 100%;
+  }
 
-  <!-- start section navbar -->
-  <nav id="main-nav">
-    <div class="row">
-      <div class="container">
 
-        <div class="logo">
-          <a href="index.html"><img src="img/logo.png" alt="logo"></a>
+  a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin: 20px auto;
+  width: 250px;
+  height: 250px;
+  background: white;
+  border-radius: 75px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 40px;
+  font-weight: lighter;
+  letter-spacing: 2px;
+  transition: 1s box-shadow;
+  text-decoration: none;
+}
+
+a:hover {
+  box-shadow: 0 5px 35px 0px rgba(0,0,0,.1);
+}
+
+a:hover::before, a:hover::after {
+  display: block;
+  content: '';
+  position: absolute;
+  width: 250px;
+  height: 250px;
+  background: #FDA8CF;
+  border-radius: 75px;
+  z-index: -1;
+  animation: 1s clockwise infinite;
+}
+
+a:hover:after {
+  background: #F3CE5E;
+  animation: 2s counterclockwise infinite;
+}
+
+@keyframes clockwise {
+  0% {
+    top: -5px;
+    left: 0;
+  }
+  12% {
+    top: -2px;
+    left: 2px;
+  }
+  25% {
+    top: 0;
+    left: 5px;    
+  }
+  37% {
+    top: 2px;
+    left: 2px;
+  }
+  50% {
+    top: 5px;
+    left: 0;    
+  }
+  62% {
+    top: 2px;
+    left: -2px;
+  }
+  75% {
+    top: 0;
+    left: -5px;
+  }
+  87% {
+    top: -2px;
+    left: -2px;
+  }
+  100% {
+    top: -5px;
+    left: 0;    
+  }
+}
+
+@keyframes counterclockwise {
+  0% {
+    top: -5px;
+    right: 0;
+  }
+  12% {
+    top: -2px;
+    right: 2px;
+  }
+  25% {
+    top: 0;
+    right: 5px;    
+  }
+  37% {
+    top: 2px;
+    right: 2px;
+  }
+  50% {
+    top: 5px;
+    right: 0;    
+  }
+  62% {
+    top: 2px;
+    right: -2px;
+  }
+  75% {
+    top: 0;
+    right: -5px;
+  }
+  87% {
+    top: -2px;
+    right: -2px;
+  }
+  100% {
+    top: -5px;
+    right: 0;    
+  }
+}
+
+.l{
+  float: left;
+}
+
+
+.all{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+
+        </style>
+        </head>
+        <body>
+        <div class="all"> 
+          <a class="l" href="/CV/engilsh.html" style="color: black;">Engilsh</a>
+          <a class="l" href="chinese.html" style="color: black;">中文</a>
         </div>
-
-        <div class="responsive"><i data-icon="m" class="ion-navicon-round"></i></div>
-
-        <ul class="nav-menu list-unstyled">
-          <li><a href="#header" class="smoothScroll">主页</a></li>
-          <li><a href="#about" class="smoothScroll">关于我</a></li>
-          <li><a href="#experience" class="smoothScroll">工作经验</a></li>
-          <li><a href="#uni" class="smoothScroll">学习简历</a></li>
-          <li><a href="#portfolio" class="smoothScroll">我的作品</a></li>
-          <li><a href="#contact" class="smoothScroll">联系方式</a></li>
-        </ul>
-
-      </div>
-    </div>
-  </nav>
-  <!-- End section navbar -->
-
-
-  <!-- start section header -->
-  <div id="header" class="home">
-
-    <div class="container">
-      <div class="header-content">
-        <h1 style="color: black;">我是 <span class="typed"></span></h1>
-        <p style="color: black;">UI设计师, 交互界面设计师, 前端开发者，插画师</p>
-
-        <ul class="list-unstyled list-social">
-          <li><a href="#"><i class="ion-social-facebook"></i></a></li>
-          <li><a href="#"><i class="ion-social-twitter"></i></a></li>
-          <li><a href="#"><i class="ion-social-instagram"></i></a></li>
-          <li><a href="#"><i class="ion-social-googleplus"></i></a></li>
-          <li><a href="#"><i class="ion-social-tumblr"></i></a></li>
-          <li><a href="#"><i class="ion-social-dribbble"></i></a></li>
-        </ul>
-      </div>
-    </div>
-  </div>
-  <!-- End section header -->
-
-
-  <!-- start section about us -->
-  <div id="about" class="paddsection">
-    <div class="container">
-      <div class="row justify-content-between">
-
-        <div class="col-lg-4 ">
-          <div class="div-img-bg">
-            <div class="about-img">
-              <img src="images/about_me.jpg" class="img-responsive" alt="me">
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-7">
-          <div class="about-descr">
-
-            <p class="p-heading" style="color: black;">我是<strong style="font-weight: bold;">UI/交互界面设计师和网页前端开发者</strong>，有过5年的(油画，素描，碳画)绘画学习经验，所以我也从事过<strong style="font-weight: bold;">插画师的工作</strong>。</p>
-            <p class="separator"><strong style="font-weight: bold;">20岁</strong>时开始接触IT行业，现已有<strong style="font-weight: bold;">1年</strong>的业内工作经验。</p>
-
-          </div>
-
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- end section about us -->
-
-
-  <!-- start section services -->
-  <div id="services">
-    <div class="container">
-
-        <div class="services-carousel owl-theme">
-
-          <div class="services-block">
-
-            <img src="./images/UI.png" width="20%" height="20%">
-            <span>UI/交互界面设计</span>
-            <p class="separator">blablablablablablablablablablablabla </p>
-
-          </div>
-
-          <div class="services-block">
-
-            <img src="./images/frontend.png" width="20%" height="20%">
-            <span>网页前端开发</span>
-            <p class="separator">blablablablablablablablablablablabla </p>
-
-          </div>
-
-          <div class="services-block">
-
-            <img src="./images/draw.png" width="20%" height="20%">
-            <span>插画师</span>
-            <p class="separator">blablablablablablablablablablablabla </p>
-
-          </div>
-
-          <div class="services-block">
-
-            <img src="./images/ras.png" width="20%" height="20%">
-            <span>服务器搭建</span>
-            <p class="separator">blablablablablablablablablablablabla </p>
-
-          </div>
-
-          <!-- <div class="services-block">
-
-            <i class="ion-ios-analytics-outline"></i>
-            <span>Analytics</span>
-            <p class="separator">To an English person, it will seem like simplified English,told me what </p>
-
-          </div>
-
-          <div class="services-block">
-
-            <i class="ion-ios-camera-outline"></i>
-            <span>PHOTOGRAPHY</span>
-            <p class="separator">To an English person, it will seem like simplified English,told me what </p>
-
-          </div> -->
-
-        </div>
-
-    </div>
-
-  </div>
-  <!-- end section services -->
-
-  <!-- experience  -->
-  <div class="section" id="experience">
-    <div class="container">
-        <div class="col-md-12">
-           
-            <h1 class="size-50 margin-left: 30px;">工作经验</h1>
-            <div class="h-50"></div>
-        </div>
-        <div class="col-md-12">
-            <ul class="timeline">
-            <!-- sunwin -->
-                <li class="timeline-event" data-aos="fade-up">
-                    <label class="timeline-event-icon"></label>
-                    <div class="timeline-event-copy">
-                        <p class="timeline-event-thumbnail">2020 - 2021</p>
-                        <h3 style="color: #333333;">Sunwin Investment Sdyney</h3>
-                        <h4>网站开发人员和UI设计师</h4>
-                        <p style="color: #333333; font-size: 14px;" >为期3个月的实习期间帮助该公司从0开始搭建了一个以信息展示功能为主的网站。</p>
-                    </div>
-                </li>
-            <!-- VelocityEngilsh -->
-                <li class="timeline-event" data-aos="fade-up" data-aos-delay=".2">
-                    <label class="timeline-event-icon"></label>
-                    <div class="timeline-event-copy">
-                        <p class="timeline-event-thumbnail">2020 - 至今</p>
-                        <h3 style="color: #333333;">迅达英语 VelocityEngilsh</h3>
-                        <h4>UI设计师</h4>
-                        <p style="color: #333333;">还没结束</p>
-                    </div>
-                </li>
-            <!-- none
-                <li class="timeline-event" data-aos="fade-up" data-aos-delay=".4">
-                    <label class="timeline-event-icon"></label>
-                    <div class="timeline-event-copy">
-                        <p class="timeline-event-thumbnail">April 2014</p>
-                        <h3>konplan gmbh</h3>
-                        <h4>IT-Consultant</h4>
-                        <p><strong>Systemarchitektur, Consulting</strong>
-                            <br>Konzeption und Modellierung von Systemen und APIs für Digital Publishing und Entitlement nach SOA</p>
-                    </div>
-                </li> -->
-
-            </ul>
-        </div>
-    </div>
-</div>
-<!-- ./experience -->
-
-<!-- uni  -->
-<div class="section" id="uni">
-  <div class="container">
-      <div class="col-md-12">
-       
-          <h1 class="size-50">学习经历</h1>
-          <div class="h-50"></div>
-      </div>
-      <div class="col-md-12">
-          <ul class="timeline">
-              <!-- Kapiti collage -->
-              <li class="timeline-event" data-aos="fade-up">
-                  <label class="timeline-event-icon"></label>
-                  <div class="timeline-event-copy">
-                      <p class="timeline-event-thumbnail">2015 - 2018</p>
-                      <h3 style="color: #333333;" >Kapiti Collage New Zealand</h3>
-                      <h4>高中</h4>
-                      <p><strong style="color: black;">主修：微积分
-                          <br>选修：统计学
-                      <br>选修：网站开发</strong><br>
-                          </p>
-                  </div>
-              </li>
-              <!-- uts -->
-              <li class="timeline-event" data-aos="fade-up" data-aos-delay=".2">
-                  <label class="timeline-event-icon"></label>
-                  <div class="timeline-event-copy">
-                      <p class="timeline-event-thumbnail">2019 - 本科在读</p>
-                      <h3 style="color: #333333;">University of Technology Sydney</h3>
-                      <h4>大学</h4>
-                      <p><strong style="color: black;">主修：网络安全
-                          <br>选修：UI/交互设计</strong><br>
-                          </p>
-                  </div>
-              </li>
-              <!-- none
-              <li class="timeline-event" data-aos="fade-up" data-aos-delay=".4">
-                  <label class="timeline-event-icon"></label>
-                  <div class="timeline-event-copy">
-                      <p class="timeline-event-thumbnail">April 2014</p>
-                      <h3>konplan gmbh</h3>
-                      <h4>IT-Consultant</h4>
-                      <p><strong>Systemarchitektur, Consulting</strong>
-                          <br>Konzeption und Modellierung von Systemen und APIs für Digital Publishing und Entitlement nach SOA</p>
-                  </div>
-              </li> -->
-          </ul>
-      </div>
-  </div>
-</div>
-<!-- ./uni -->
-
- <!-- start section portfolio -->
- <div id="portfolio" class="text-center paddsection">
-
-  <div class="container">
-    <div class="section-title text-center">
-      <h2>我的作品</h2>
-    </div>
-  </div>
-
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12">
-
-        <div class="portfolio-list">
-
-          <ul class="nav list-unstyled" id="portfolio-flters">
-            <li class="filter filter-active" data-filter=".all">all</li>
-            <li class="filter" data-filter=".UI">UI/交互界面</li>
-            <li class="filter" data-filter=".web">网页</li>
-            <li class="filter" data-filter=".draw">画作</li>
-          </ul>
-
-        </div>
-
-        <div class="portfolio-container">
-
-          <div class="col-lg-4 col-md-6 portfolio-thumbnail all web UI">
-            <!-- <a class="popup-img" href="https://www.sunwininvestments.com.au/"> -->
-              <img onclick="location='https://www.sunwininvestments.com.au/'" src="./img/sunwin.png" alt="img">
-            </a>
-          </div>
-
-          
-        </div>
-      </div>
-    </div>
-  </div>
-
-</div>
-<!-- End section portfolio -->
-
-
-  <!-- start sectoion contact -->
-  <div id="contact" class="paddsection">
-    <div class="container">
-      <div class="contact-block1">
-        <div class="row">
-
-          <div class="col-lg-6">
-            <div class="contact-contact">
-
-              <h2 class="mb-30">联系方式</h2>
-
-              <ul class="contact-details">
-                <li><span>42/Church AVE Mascot NSW 2020</span></li>
-                <li><span>悉尼，澳大利亚</span></li>
-                <li><span>+61 405155473</span></li>
-                <li><span>1464729020@qq.com</span></li>
-              </ul>
-
-            </div>
-          </div>
-
-          <div class="col-lg-6">
-            <form action="" method="post" role="form" class="contactForm">
-              <div class="row">
-
-                <div id="sendmessage">Your message has been sent. Thank you!</div>
-                <div id="errormessage"></div>
-
-                <div class="col-lg-6">
-                  <div class="form-group contact-block1">
-                    <input type="text" name="name" class="form-control" id="name" placeholder="你的名字" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
-                    <div class="validation"></div>
-                  </div>
-                </div>
-
-                <div class="col-lg-6">
-                  <div class="form-group">
-                    <input type="email" class="form-control" name="email" id="email" placeholder="你的邮箱" data-rule="email" data-msg="Please enter a valid email" />
-                    <div class="validation"></div>
-                  </div>
-                </div>
-
-                <div class="col-lg-12">
-                  <div class="form-group">
-                    <input type="text" class="form-control" name="subject" id="subject" placeholder="主题" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
-                    <div class="validation"></div>
-                  </div>
-                </div>
-
-                <div class="col-lg-12">
-                  <div class="form-group">
-                    <textarea class="form-control" name="message" rows="12" data-rule="required" data-msg="Please write something for us" placeholder="留言"></textarea>
-                    <div class="validation"></div>
-                  </div>
-                </div>
-
-                <div class="col-lg-12">
-                  <input type="submit" class="btn btn-defeault btn-send" value="发送">
-                </div>
-
-              </div>
-            </form>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- start sectoion contact -->
-
-
-  <!-- start section footer -->
-  <div id="footer" class="text-center">
-    <div class="container">
-      <div class="socials-media text-center">
-
-        <ul class="list-unstyled">
-          <li><a href="#"><i class="ion-social-facebook"></i></a></li>
-          <li><a href="#"><i class="ion-social-twitter"></i></a></li>
-          <li><a href="#"><i class="ion-social-instagram"></i></a></li>
-          <li><a href="#"><i class="ion-social-googleplus"></i></a></li>
-          <li><a href="#"><i class="ion-social-tumblr"></i></a></li>
-          <li><a href="#"><i class="ion-social-dribbble"></i></a></li>
-        </ul>
-
-      </div>
-
-      <p>Copyright &copy; 2021.All rights reserved.</p>
-
-    </div>
-  </div>
-  <!-- End section footer -->
-
-  <!-- JavaScript Libraries -->
-  <script src="lib/jquery/jquery.min.js"></script>
-  <script src="lib/jquery/jquery-migrate.min.js"></script>
-  <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="lib/typed/typed.js"></script>
-  <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-  <script src="lib/magnific-popup/magnific-popup.min.js"></script>
-  <script src="lib/isotope/isotope.pkgd.min.js"></script>
-
-  <!-- Contact Form JavaScript File -->
-  <script src="contactform/contactform.js"></script>
-
-  <!-- Template Main Javascript File -->
-  <script src="js/main.js"></script>
-
+        
 </body>
-
 </html>
