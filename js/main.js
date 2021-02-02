@@ -79,7 +79,7 @@ $(document).ready(function() {
 
   $(function() {
     typed.typed({
-      strings: ["Alex Smith.", "Designer.", "Developer.", "Freelancer.", "Photographer"],
+      strings: ["UI设计师。", "交互界面设计师。", "前端开发者。", "插画师", "严文尧(Stan Yan)。"],
       typeSpeed: 100,
       loop: true,
     });
