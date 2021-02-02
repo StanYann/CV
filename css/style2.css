@@ -425,7 +425,7 @@ a.active {
 }
 
 .timeline-event-copy {
-    padding: 2em;
+    /* padding: 2em; */
     position: relative;
     top: -1.875em;
     left: 4em;
@@ -674,7 +674,7 @@ a.active {
 
 #contact {
     padding: 100px 0;
-    background: #f3f3f3
+    background: #ffffff
 }
 
 #contact-form input,
