@@ -31,6 +31,63 @@
 
   <!-- Favicon -->
   <link rel="shortcut icon" href="img/logo.png">
+  <style>
+
+    .buttons {
+      display: -webkit-box;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      flex-direction: column;
+      text-align: left;
+      
+      /* height: 100%;
+      -webkit-box-pack: center;
+      justify-content: center;
+      text-align: center;
+      width: 100%; */
+     }
+     
+     
+     .btn {
+      background: transparent;
+      color: black;
+      cursor: pointer;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 45px;
+      margin: 0 0 2em;
+      max-width: 160px;
+      position: relative;
+      text-decoration: none;
+      text-transform: uppercase;
+      width: 100%;
+     }
+     .btn:hover {
+      text-decoration: none;
+     }
+     
+     .btn-5 {
+      border: 0px solid;
+      box-shadow: inset 0 0 20px rgba(255, 255, 255, 0);
+      outline: 1px solid;
+      outline-color: rgba(0, 0, 0, 0.5);
+      outline-offset: 0px;
+      text-shadow: none;
+      -webkit-transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1);
+      transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1);
+     }
+     
+     .btn-5:hover {
+      border: 1px solid;
+      box-shadow: inset 0 0 20px rgba(255, 255, 255, 0.5), 0 0 20px rgba(255, 255, 255, 0.2);
+      outline-color: rgba(255, 255, 255, 0);
+      outline-offset: 15px;
+      text-shadow: 1px 1px 2px #427388;
+     }
+    
+    
+      </style>
 
 </head>
 
@@ -70,10 +127,10 @@
         <h1 style="color: black;">I'm <span class="typed1"></span></h1>
         <p style="color: black;">UI designer, UX designer, Front-end engineer，Illustrator</p>
         <section class="buttons">
-          <div class="b_container">
-              <a href="./img/CV.pdf" download="./img/CV.pdf" class="btnCV btn-4"><span style="padding-left: 30%;">点击下载简历</span></a>
+          <div class="container">
+          <a href="./img/CV.pdf" download="./img/CV.pdf" class="btn btn-5">点击下载简历</a>
           </div>
-          </section>
+        </section>
 
         <ul class="list-unstyled list-social">
           <!-- wechat -->
