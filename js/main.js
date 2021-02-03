@@ -85,15 +85,15 @@ $(document).ready(function() {
     });
   });
 
-  var typed = $(".typed1");
+  // var typed = $(".typed1");
 
-  $(function() {
-    typed.typed({
-      strings: ["UI designer.", "UX designer.", "Front-end engineer.", "Illustrator.", "Stan Yan.😬"],
-      typeSpeed: 100,
-      loop: true,
-    });
-  });
+  // $(function() {
+  //   typed.typed({
+  //     strings: ["UI designer.", "UX designer.", "Front-end engineer.", "Illustrator.", "Stan Yan.😬"],
+  //     typeSpeed: 100,
+  //     loop: true,
+  //   });
+  // });
 
 
   // ========================================================================= //
