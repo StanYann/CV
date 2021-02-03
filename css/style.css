@@ -18,7 +18,46 @@ body {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
+.buttonh {
+  position: relative;
+}
 
+.buttonh p {
+  display: inline-block;
+  background: blue;
+  color: #fff;
+  padding: 0.4em 0.6em;
+  font-size: 1.3em;
+  border-radius: 1em;
+}
+
+.buttonh figure {
+  display: none;
+  position: absolute;
+  top: 2em;
+  left: 1em;
+  padding: 0;
+  margin: 0;
+  /* border: 5px solid #fd0;
+  background: #fd0; */
+  border-radius: 1em;
+}
+
+.buttonh img {
+  display: block;
+  border-radius: 0.8em;
+  max-width: 100%;
+  height: auto;
+}
+
+.buttonh:focus figure,
+.buttonh:hover figure {
+  display: block;
+}
+.buttonh:focus p,
+.buttonh:hover p {
+  background: red;
+}
 .l{
   float: left;
 }
